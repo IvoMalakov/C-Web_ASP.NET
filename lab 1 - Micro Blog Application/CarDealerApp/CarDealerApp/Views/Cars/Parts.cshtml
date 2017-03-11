@@ -1,0 +1,21 @@
+﻿@model CarDealer.Models.Car
+
+@{
+    ViewBag.Title = "Parts";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 style="text-transform: uppercase" class="text-capitalize text-center">Detailed list of Cars and Parts</h1>
+<h2 class="text-info">@Model.Make @Model.Model</h2>
+<h3>Distance Travelled: <span class="text-danger">@Model.TravelledDistance</span></h3>
+<br/>
+
+<h4 class="text-success">Parts : </h4>
+<ul>
+    @{
+        foreach (var part in Model.Parts)
+        {
+            <li>@part.Name - <span class="text-danger">$@part.Price</span></li>
+        }
+    }
+</ul>
