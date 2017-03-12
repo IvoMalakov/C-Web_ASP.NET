@@ -7,13 +7,17 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using CarDealer.Data;
-using CarDealer.Models;
+using CarDealer.Models.BindingModels;
+using CarDealer.Models.EntityModels;
+using CarDealer.Services;
+using Microsoft.Ajax.Utilities;
 
 namespace CarDealerApp.Controllers
 {
     public class CustomersController : Controller
     {
         private CarDealerContext db = new CarDealerContext();
+        private CustomerService service = new CustomerService(Data.Context);
 
         // GET: Customers
 
@@ -62,7 +66,8 @@ namespace CarDealerApp.Controllers
         }
 
         // GET: Customers/Create
-        public ActionResult Create()
+        [Route("~/Customers/Add")]
+        public ActionResult Add()
         {
             return View();
         }
@@ -71,48 +76,35 @@ namespace CarDealerApp.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,BirthDate,IsYoungDriver")] Customer customer)
+        [Route("~/Customers/Add")]
+        public ActionResult Add([Bind(Include = "Name,BirthDate")] AddCustomerBindingModel addCustomerBindingModel)
         {
-            if (ModelState.IsValid)
-            {
-                db.Customers.Add(customer);
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-
-            return View(customer);
+            this.service.AddCustomer(addCustomerBindingModel);
+            return this.RedirectToAction("Index");
         }
 
-        // GET: Customers/Edit/5
-        public ActionResult Edit(int? id)
+        [Route("~/Customers/Edit")]
+        public ActionResult Edit()
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Customer customer = db.Customers.Find(id);
-            if (customer == null)
-            {
-                return HttpNotFound();
-            }
-            return View(customer);
+            EditCustomerBindingModel model = this.service.GetEditedCustomer();
+            return this.View(model);
+        }
+
+        [Route("~/Customers/Edit/{id:int}")]
+        public ActionResult Edit(int id)
+        {
+            EditCustomerBindingModel model = this.service.GetEditedCustomer(id);
+            return this.View(model);
         }
 
         // POST: Customers/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Name,BirthDate,IsYoungDriver")] Customer customer)
+        public ActionResult Edit([Bind(Include = "Id,Name,BirthDate")] EditCustomerBindingModel model)
         {
-            if (ModelState.IsValid)
-            {
-                db.Entry(customer).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            return View(customer);
+            this.service.EditCustomer(model);
+            return this.RedirectToAction("Index");
         }
 
         // GET: Customers/Delete/5

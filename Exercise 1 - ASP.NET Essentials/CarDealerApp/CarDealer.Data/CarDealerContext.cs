@@ -1,6 +1,6 @@
 namespace CarDealer.Data
 {
-    using Models;
+    using Models.EntityModels;
     using System;
     using System.Data.Entity;
     using System.Linq;

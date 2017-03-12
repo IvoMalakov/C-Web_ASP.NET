@@ -1,0 +1,16 @@
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealer.Services\bin\Debug\CarDealer.Services.dll.config
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealer.Services\bin\Debug\CarDealer.Services.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealer.Services\bin\Debug\CarDealer.Services.pdb
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealer.Services\bin\Debug\AutoMapper.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealer.Services\bin\Debug\CarDealer.Data.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealer.Services\bin\Debug\CarDealer.Models.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealer.Services\bin\Debug\EntityFramework.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealer.Services\bin\Debug\EntityFramework.SqlServer.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealer.Services\bin\Debug\CarDealer.Data.pdb
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealer.Services\bin\Debug\CarDealer.Models.pdb
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealer.Services\bin\Debug\AutoMapper.xml
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealer.Services\bin\Debug\EntityFramework.xml
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealer.Services\bin\Debug\EntityFramework.SqlServer.xml
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealer.Services\obj\Debug\CarDealer.Services.csprojResolveAssemblyReference.cache
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealer.Services\obj\Debug\CarDealer.Services.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealer.Services\obj\Debug\CarDealer.Services.pdb

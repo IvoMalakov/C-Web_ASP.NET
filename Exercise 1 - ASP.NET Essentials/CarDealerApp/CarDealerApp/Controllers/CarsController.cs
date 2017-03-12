@@ -7,7 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using CarDealer.Data;
-using CarDealer.Models;
+using CarDealer.Models.EntityModels;
 
 namespace CarDealerApp.Controllers
 {
