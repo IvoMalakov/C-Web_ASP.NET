@@ -36,9 +36,8 @@
             @Html.DisplayFor(modelItem => item.IsYoungDriver)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            <a class="btn btn-success" href="~/Customers/Edit/@item.Id" style="margin-right: 10px; width: 75px">Edit</a>
+            <a class="btn btn-danger" href="~/Customers/Delete/@item.Id" style="width: 75px">Delete</a>
         </td>
     </tr>
 }

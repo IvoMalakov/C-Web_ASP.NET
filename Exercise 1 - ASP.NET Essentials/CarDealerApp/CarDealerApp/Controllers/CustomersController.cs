@@ -106,6 +106,7 @@ namespace CarDealerApp.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
+        [Route("~/Customers/Edit/{id:int}")]
         public ActionResult Edit([Bind(Include = "Id,Name,BirthDate")] EditCustomerBindingModel bind)
         {
             if (this.ModelState.IsValid)
@@ -117,30 +118,18 @@ namespace CarDealerApp.Controllers
             return this.View();
         }
 
-        // GET: Customers/Delete/5
-        public ActionResult Delete(int? id)
+        [Route("~/Customers/Delete")]
+        public ActionResult Delete()
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Customer customer = db.Customers.Find(id);
-            if (customer == null)
-            {
-                return HttpNotFound();
-            }
-            return View(customer);
+            this.service.DeleteCustomer();
+            return this.RedirectToAction("Index");
         }
 
-        // POST: Customers/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
+        [Route("~/Customers/Delete/{id:int}")]
+        public ActionResult Delete(int id)
         {
-            Customer customer = db.Customers.Find(id);
-            db.Customers.Remove(customer);
-            db.SaveChanges();
-            return RedirectToAction("Index");
+            this.service.DeleteCustomer(id);
+            return this.RedirectToAction("Index");
         }
 
         protected override void Dispose(bool disposing)

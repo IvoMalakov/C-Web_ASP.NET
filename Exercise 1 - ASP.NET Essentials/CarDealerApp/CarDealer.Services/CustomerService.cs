@@ -19,9 +19,13 @@ namespace CarDealer.Services
 
         public void AddCustomer(AddCustomerBindingModel bindingModel)
         {
-            Customer customer = Mapper.Map<AddCustomerBindingModel, Customer>(bindingModel);
+            Customer customer = new Customer()
+            {
+                Name = bindingModel.Name,
+                BirthDate = bindingModel.BirthDate,
+                IsYoungDriver = DateTime.Now.Year - bindingModel.BirthDate.Year < 21
 
-            customer.IsYoungDriver = DateTime.Now.Year - customer.BirthDate.Year < 21;
+            };
 
             this.Context.Customers.Add(customer);
             this.Context.SaveChanges();
@@ -30,7 +34,13 @@ namespace CarDealer.Services
         public EditCustomerBindingModel GetEditedCustomer()
         {
             Customer customer = this.Context.Customers.Find(1);
-            EditCustomerBindingModel bindingModel = Mapper.Map<Customer, EditCustomerBindingModel>(customer);
+            EditCustomerBindingModel bindingModel = new EditCustomerBindingModel()
+            {
+                Id = 1,
+                Name = customer.Name,
+                BirthDate = customer.BirthDate
+            };
+
             return bindingModel;
 
         }
@@ -38,14 +48,34 @@ namespace CarDealer.Services
         public EditCustomerBindingModel GetEditedCustomer(int id)
         {
             Customer customer = this.Context.Customers.Find(id);
-            EditCustomerBindingModel bindingModel = Mapper.Map<Customer, EditCustomerBindingModel>(customer);
+            EditCustomerBindingModel bindingModel = new EditCustomerBindingModel()
+            {
+                Id = id,
+                Name = customer.Name,
+                BirthDate = customer.BirthDate
+            };
             return bindingModel;
         }
 
         public void EditCustomer(EditCustomerBindingModel bindingModel)
         {
-            Customer customer = Mapper.Map<EditCustomerBindingModel, Customer>(bindingModel);
-            this.Context.Customers.AddOrUpdate(customer);
+            Customer customer = this.Context.Customers.Find(bindingModel.Id);
+            customer.Name = bindingModel.Name;
+            customer.BirthDate = bindingModel.BirthDate;
+            this.Context.SaveChanges();
+        }
+
+        public void DeleteCustomer()
+        {
+            Customer customer = this.Context.Customers.Find(1);
+            this.Context.Customers.Remove(customer);
+            this.Context.SaveChanges();
+        }
+
+        public void DeleteCustomer(int id)
+        {
+            Customer customer = this.Context.Customers.Find(id);
+            this.Context.Customers.Remove(customer);
             this.Context.SaveChanges();
         }
     }

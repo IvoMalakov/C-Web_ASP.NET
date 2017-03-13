@@ -9,17 +9,8 @@ namespace CarDealer.Services
     {
         protected Service(CarDealerContext context)
         {
-            this.Context = context;
-            ConfigureAutommaper();
-        }
+            this.Context = context;        }
 
         public CarDealerContext Context { get; set; }
-
-        private static void ConfigureAutommaper()
-        {
-            Mapper.Initialize(expression => expression.CreateMap<AddCustomerBindingModel, Customer>());
-            Mapper.Initialize(expression => expression.CreateMap<EditCustomerBindingModel, Customer>());
-            Mapper.Initialize(expression => expression.CreateMap<Customer, EditCustomerBindingModel>());
-        }
     }
 }
