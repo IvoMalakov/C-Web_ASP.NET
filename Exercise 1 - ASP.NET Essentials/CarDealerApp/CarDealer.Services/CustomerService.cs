@@ -17,9 +17,9 @@ namespace CarDealer.Services
         {
         }
 
-        public void AddCustomer(AddCustomerBindingModel model)
+        public void AddCustomer(AddCustomerBindingModel bindingModel)
         {
-            Customer customer = Mapper.Map<AddCustomerBindingModel, Customer>(model);
+            Customer customer = Mapper.Map<AddCustomerBindingModel, Customer>(bindingModel);
 
             customer.IsYoungDriver = DateTime.Now.Year - customer.BirthDate.Year < 21;
 
@@ -30,21 +30,21 @@ namespace CarDealer.Services
         public EditCustomerBindingModel GetEditedCustomer()
         {
             Customer customer = this.Context.Customers.Find(1);
-            EditCustomerBindingModel model = Mapper.Map<Customer, EditCustomerBindingModel>(customer);
-            return model;
+            EditCustomerBindingModel bindingModel = Mapper.Map<Customer, EditCustomerBindingModel>(customer);
+            return bindingModel;
 
         }
 
         public EditCustomerBindingModel GetEditedCustomer(int id)
         {
             Customer customer = this.Context.Customers.Find(id);
-            EditCustomerBindingModel model = Mapper.Map<Customer, EditCustomerBindingModel>(customer);
-            return model;
+            EditCustomerBindingModel bindingModel = Mapper.Map<Customer, EditCustomerBindingModel>(customer);
+            return bindingModel;
         }
 
-        public void EditCustomer(EditCustomerBindingModel model)
+        public void EditCustomer(EditCustomerBindingModel bindingModel)
         {
-            Customer customer = Mapper.Map<EditCustomerBindingModel, Customer>(model);
+            Customer customer = Mapper.Map<EditCustomerBindingModel, Customer>(bindingModel);
             this.Context.Customers.AddOrUpdate(customer);
             this.Context.SaveChanges();
         }

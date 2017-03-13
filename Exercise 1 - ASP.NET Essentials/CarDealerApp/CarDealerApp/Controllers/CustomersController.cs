@@ -79,32 +79,42 @@ namespace CarDealerApp.Controllers
         [Route("~/Customers/Add")]
         public ActionResult Add([Bind(Include = "Name,BirthDate")] AddCustomerBindingModel addCustomerBindingModel)
         {
-            this.service.AddCustomer(addCustomerBindingModel);
-            return this.RedirectToAction("Index");
+            if (this.ModelState.IsValid)
+            {
+                this.service.AddCustomer(addCustomerBindingModel);
+                return this.RedirectToAction("Index");
+            }
+
+            return this.View();
         }
 
         [Route("~/Customers/Edit")]
         public ActionResult Edit()
         {
-            EditCustomerBindingModel model = this.service.GetEditedCustomer();
-            return this.View(model);
+            EditCustomerBindingModel bind = this.service.GetEditedCustomer();
+            return this.View(bind);
         }
 
         [Route("~/Customers/Edit/{id:int}")]
         public ActionResult Edit(int id)
         {
-            EditCustomerBindingModel model = this.service.GetEditedCustomer(id);
-            return this.View(model);
+            EditCustomerBindingModel bind = this.service.GetEditedCustomer(id);
+            return this.View(bind);
         }
 
         // POST: Customers/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        public ActionResult Edit([Bind(Include = "Id,Name,BirthDate")] EditCustomerBindingModel model)
+        public ActionResult Edit([Bind(Include = "Id,Name,BirthDate")] EditCustomerBindingModel bind)
         {
-            this.service.EditCustomer(model);
-            return this.RedirectToAction("Index");
+            if (this.ModelState.IsValid)
+            {
+                this.service.EditCustomer(bind);
+                return this.RedirectToAction("Index");
+            }
+
+            return this.View();
         }
 
         // GET: Customers/Delete/5
