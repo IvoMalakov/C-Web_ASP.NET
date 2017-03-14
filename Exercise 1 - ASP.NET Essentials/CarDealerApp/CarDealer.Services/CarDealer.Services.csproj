@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CarsService.cs" />
     <Compile Include="CustomerService.cs" />
     <Compile Include="PartsService.cs" />
     <Compile Include="Service.cs" />

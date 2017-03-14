@@ -216,6 +216,7 @@
     <Content Include="Views\Sales\Details.cshtml" />
     <Content Include="Views\Sales\Edit.cshtml" />
     <Content Include="Views\Sales\Index.cshtml" />
+    <Content Include="Views\Cars\Add.cshtml" />
     <None Include="Views\Customers\Add.cshtml" />
     <None Include="Views\Customers\TotalSales.cshtml" />
     <Content Include="Views\Parts\Create.cshtml" />
