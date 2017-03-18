@@ -21,6 +21,14 @@ namespace CarDealer.Data
         public virtual DbSet<Sale> Sales { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Session> Sessions { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Supplier>()
+                .HasMany(s => s.Parts)
+                .WithRequired(p => p.Supplier)
+                .WillCascadeOnDelete(true);
+        }
     }
 
 }

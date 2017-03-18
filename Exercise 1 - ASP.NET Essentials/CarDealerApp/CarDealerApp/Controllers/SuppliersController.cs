@@ -7,13 +7,19 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using CarDealer.Data;
+using CarDealer.Models.BindingModels;
 using CarDealer.Models.EntityModels;
+using CarDealer.Models.ViewModels;
+using CarDealer.Services;
+using CarDealerApp.Security;
+using AuthenticationManager = CarDealerApp.Security.AuthenticationManager;
 
 namespace CarDealerApp.Controllers
 {
     public class SuppliersController : Controller
     {
         private CarDealerContext db = new CarDealerContext();
+        private SuppliersService service = new SuppliersService(Data.Context);
 
         [Route("~/suppliers")]
         public ActionResult Index()
@@ -46,99 +52,108 @@ namespace CarDealerApp.Controllers
             return View(suppliers.ToList());
         }
 
-        // GET: Suppliers/Details/5
-        public ActionResult Details(int? id)
+        [HttpGet]
+        [Route("~/suppliers/add")]
+        public ActionResult Add()
         {
-            if (id == null)
+            var httpCoockie = this.Request.Cookies.Get("sessionId");
+
+            if (httpCoockie == null || !AuthenticationManager.IsAuthenticated(httpCoockie.Value))
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                return this.RedirectToAction("Login", "Users");
             }
-            Supplier supplier = db.Suppliers.Find(id);
-            if (supplier == null)
-            {
-                return HttpNotFound();
-            }
-            return View(supplier);
+
+            return this.View();
         }
 
-        // GET: Suppliers/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Suppliers/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,IsImporter")] Supplier supplier)
+        [Route("~/suppliers/add")]
+        public ActionResult Add([Bind(Include = "Name, IsImporter")] AddSupplierBindingModel bindingModel)
         {
+            var httpCoockie = this.Request.Cookies.Get("sessionId");
+
+            if (httpCoockie == null || !AuthenticationManager.IsAuthenticated(httpCoockie.Value))
+            {
+                return this.RedirectToAction("Login", "Users");
+            }
+
             if (ModelState.IsValid)
             {
-                db.Suppliers.Add(supplier);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                this.service.AddSupplier(bindingModel);
+                return this.RedirectToAction("Index");
             }
 
-            return View(supplier);
+            return this.View();
         }
 
-        // GET: Suppliers/Edit/5
-        public ActionResult Edit(int? id)
+        [HttpGet]
+        [Route("~/suppliers/edit/{id:int}")]
+        public ActionResult Edit(int id)
         {
-            if (id == null)
+            var httpCoockie = this.Request.Cookies.Get("sessionId");
+
+            if (httpCoockie == null || !AuthenticationManager.IsAuthenticated(httpCoockie.Value))
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                return this.RedirectToAction("Login", "Users");
             }
-            Supplier supplier = db.Suppliers.Find(id);
-            if (supplier == null)
-            {
-                return HttpNotFound();
-            }
-            return View(supplier);
+
+            EditSupplierViewModel supplierViewModel = this.service.GetSupplierToEdit(id);
+            return this.View(supplierViewModel);
         }
 
-        // POST: Suppliers/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Name,IsImporter")] Supplier supplier)
+        [Route("~/suppliers/edit/{id:int}")]
+        public ActionResult Edit([Bind(Include = "Id, Name, IsImporter")] EditSupplierBindingModel bindingModel)
         {
+            var httpCoockie = this.Request.Cookies.Get("sessionId");
+
+            if (httpCoockie == null || !AuthenticationManager.IsAuthenticated(httpCoockie.Value))
+            {
+                return this.RedirectToAction("Login", "Users");
+            }
+
             if (ModelState.IsValid)
             {
-                db.Entry(supplier).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                this.service.EditSuppller(bindingModel);
+                return this.RedirectToAction("Index");
             }
-            return View(supplier);
+
+            return this.RedirectToAction("Edit", "Suppliers", new {id = bindingModel.Id});
         }
 
-        // GET: Suppliers/Delete/5
-        public ActionResult Delete(int? id)
+        [HttpGet]
+        [Route("~/suppliers/delete/{id:int}")]
+        public ActionResult Delete(int id)
         {
-            if (id == null)
+            var httpCoockie = this.Request.Cookies.Get("sessionId");
+
+            if (httpCoockie == null || !AuthenticationManager.IsAuthenticated(httpCoockie.Value))
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                return this.RedirectToAction("Login", "Users");
             }
-            Supplier supplier = db.Suppliers.Find(id);
-            if (supplier == null)
-            {
-                return HttpNotFound();
-            }
-            return View(supplier);
+
+            DeleteSupplierViewModel viewModel = this.service.GetSupplierForDeletion(id);
+            return this.View(viewModel);
         }
 
-        // POST: Suppliers/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
+        [HttpPost]
+        [Route("~/suppliers/delete/{id:int}")]
+        public ActionResult Delete([Bind(Include = "Id")] DeleteSupplierBindingModel bindingModel)
         {
-            Supplier supplier = db.Suppliers.Find(id);
-            db.Suppliers.Remove(supplier);
-            db.SaveChanges();
-            return RedirectToAction("Index");
+            var httpCoockie = this.Request.Cookies.Get("sessionId");
+
+            if (httpCoockie == null || !AuthenticationManager.IsAuthenticated(httpCoockie.Value))
+            {
+                return this.RedirectToAction("Login", "Users");
+            }
+
+            if (this.ModelState.IsValid)
+            {
+                this.service.DeleteSupplier(bindingModel);
+                return this.RedirectToAction("Index");
+            }
+
+            return this.RedirectToAction("Delete", "Suppliers", new {id = bindingModel.Id});
         }
 
         protected override void Dispose(bool disposing)

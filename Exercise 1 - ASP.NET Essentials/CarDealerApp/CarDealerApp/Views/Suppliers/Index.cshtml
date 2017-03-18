@@ -5,48 +5,51 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<style>
+    h1 {
+        text-transform: uppercase;
+    }
+
+    table, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .btn {
+        border-radius: 10px;
+        width: 100px;
+        margin-bottom: 20px;
+        padding: 5px;
+        height: 35px;
+    }
+</style>
+
+<h1 class="text-capitalize text-center text-primary">List of all Suppliers</h1>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+   <a class="btn btn-primary" href="~/suppliers/add">New Supplier</a>
 </p>
 <table class="table">
     <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Id)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.IsImporter)
-        </th>
-        <th>
-            Number of Parts
-        </th>
-        <th></th>
+        <th>Name</th>
+        <th>Importer</th>
+        <th>Number of Parts</th>
+        <th>Actions</th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Id)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.IsImporter)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Parts.Count)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-        </td>
-    </tr>
-}
-
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            @{
+                string isImporter = @item.IsImporter ? "Yes" : "No";
+                <td>@isImporter</td>
+            }
+            <td>@item.Parts.Count</td>
+            <td>
+                <a href="~/suppliers/edit/@item.Id">Edit</a>
+                <a href="~/suppliers/delete/@item.Id">Delete</a>
+            </td>
+        </tr>
+    }
 </table>

@@ -39,8 +39,10 @@
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Local", "Index", "Suppliers", new { type = "local" }, null)</li>
-                            <li>@Html.ActionLink("Importers", "Index", "Suppliers", new { type = "importer" }, null)</li>
+                            <li>@Html.ActionLink("All", "Index", "Suppliers")</li>
+                            <li>@Html.ActionLink("Local", "Index", "Suppliers", new {type = "local"}, null)</li>
+                            <li>@Html.ActionLink("Importers", "Index", "Suppliers", new {type = "importer"}, null)</li>
+                            <li>@Html.ActionLink("Add", "Add", "Suppliers")</li>
                         </ul>
                     </li>
                     <li class="dropdown">
