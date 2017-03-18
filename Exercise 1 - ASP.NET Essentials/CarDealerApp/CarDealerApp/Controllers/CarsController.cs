@@ -11,6 +11,8 @@ using CarDealer.Models.BindingModels;
 using CarDealer.Models.EntityModels;
 using CarDealer.Models.ViewModels;
 using CarDealer.Services;
+using CarDealerApp.Security;
+using AuthenticationManager = CarDealerApp.Security.AuthenticationManager;
 
 namespace CarDealerApp.Controllers
 {
@@ -61,6 +63,13 @@ namespace CarDealerApp.Controllers
         [Route("~/cars/add")]
         public ActionResult Add()
         {
+            var httpCoockie = this.Request.Cookies.Get("sessionId");
+
+            if (httpCoockie == null || !AuthenticationManager.IsAuthenticated(httpCoockie.Value))
+            {
+                return this.RedirectToAction("Login", "Users");
+            }
+
             IEnumerable<PartForACarViewModel> partsForACar = this.service.GetPartsForCars();
             return this.View(partsForACar);
         }
@@ -69,6 +78,13 @@ namespace CarDealerApp.Controllers
         [Route("~/cars/add")]
         public ActionResult Add([Bind(Include = "Make, Model, TravelledDistance, Part1, Part2, Part3")] AddCarBindingModel bindingModel)
         {
+            var httpCoockie = this.Request.Cookies.Get("sessionId");
+
+            if (httpCoockie == null || !AuthenticationManager.IsAuthenticated(httpCoockie.Value))
+            {
+                return this.RedirectToAction("Login", "Users");
+            }
+
             if (this.ModelState.IsValid)
             {
                 this.service.AddCarToDb(bindingModel);

@@ -8,6 +8,7 @@ namespace CarDealerApp.Controllers
 {
     public class HomeController : Controller
     {
+        [Route("~/home/index")]
         public ActionResult Index()
         {
             return View();

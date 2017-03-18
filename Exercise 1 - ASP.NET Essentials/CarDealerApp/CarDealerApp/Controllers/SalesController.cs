@@ -7,13 +7,19 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using CarDealer.Data;
+using CarDealer.Models.BindingModels;
 using CarDealer.Models.EntityModels;
+using CarDealer.Models.ViewModels.AddSaleViewModels;
+using CarDealer.Services;
+using CarDealerApp.Security;
+using AuthenticationManager = CarDealerApp.Security.AuthenticationManager;
 
 namespace CarDealerApp.Controllers
 {
     public class SalesController : Controller
     {
         private CarDealerContext db = new CarDealerContext();
+        private SalesService service = new SalesService(Data.Context);
 
         // GET: Sales
         [Route("~/Sales")]
@@ -44,84 +50,78 @@ namespace CarDealerApp.Controllers
             return View(discountedSales);
         }
 
-        // GET: Sales/Create
-        public ActionResult Create()
+        [HttpGet]
+        [Route("~/sales/add")]
+        public ActionResult Add()
         {
-            return View();
+            var httpCoockie = this.Request.Cookies.Get("sessionId");
+
+            if (httpCoockie == null || !AuthenticationManager.IsAuthenticated(httpCoockie.Value))
+            {
+                return this.RedirectToAction("Login", "Users");
+            }
+
+            AddSaleViewModel addSaleViewModel = this.service.GetAllSalesDetails();
+            return this.View(addSaleViewModel);
         }
 
-        // POST: Sales/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Discount")] Sale sale)
+        [Route("~/sales/add")]
+        public ActionResult Add([Bind(Include = "Customer, Car, Discount")] AddSaleBindingModel bindingModel)
         {
+            var httpCoockie = this.Request.Cookies.Get("sessionId");
+
+            if (httpCoockie == null || !AuthenticationManager.IsAuthenticated(httpCoockie.Value))
+            {
+                return this.RedirectToAction("Login", "Users");
+            }
+
+            if (this.db.Cars.Find(bindingModel.Car) != null && this.db.Customers.Find(bindingModel.Customer) != null)
+            {
+                return this.RedirectToAction("Review", new
+                {
+                    Customer = bindingModel.Customer,
+                    Car = bindingModel.Car,
+                    Discount = bindingModel.Discount
+                });
+            }
+
+            return this.View();
+        }
+
+        [HttpGet]
+        [Route("~/sales/review")]
+        public ActionResult Review(AddSaleBindingModel bindingModel)
+        {
+            var httpCoockie = this.Request.Cookies.Get("sessionId");
+
+            if (httpCoockie == null || !AuthenticationManager.IsAuthenticated(httpCoockie.Value))
+            {
+                return this.RedirectToAction("Login", "Users");
+            }
+
+            var reviewOfferModel = this.service.ReviewFinalOffer(bindingModel);
+            return this.View(reviewOfferModel);
+        }
+
+        [HttpPost]
+        [Route("~/sales/review")]
+        public ActionResult Rview([Bind(Include = "CustomerId, CarId, Discount")] ReviewSaleBindingModel bindingModel)
+        {
+            var httpCoockie = this.Request.Cookies.Get("sessionId");
+
+            if (httpCoockie == null || !AuthenticationManager.IsAuthenticated(httpCoockie.Value))
+            {
+                return this.RedirectToAction("Login", "Users");
+            }
+
             if (ModelState.IsValid)
             {
-                db.Sales.Add(sale);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                this.service.FinalizeSale(bindingModel);
+                return this.RedirectToAction("Index");
             }
 
-            return View(sale);
-        }
-
-        // GET: Sales/Edit/5
-        public ActionResult Edit(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Sale sale = db.Sales.Find(id);
-            if (sale == null)
-            {
-                return HttpNotFound();
-            }
-            return View(sale);
-        }
-
-        // POST: Sales/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Discount")] Sale sale)
-        {
-            if (ModelState.IsValid)
-            {
-                db.Entry(sale).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            return View(sale);
-        }
-
-        // GET: Sales/Delete/5
-        public ActionResult Delete(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Sale sale = db.Sales.Find(id);
-            if (sale == null)
-            {
-                return HttpNotFound();
-            }
-            return View(sale);
-        }
-
-        // POST: Sales/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
-        {
-            Sale sale = db.Sales.Find(id);
-            db.Sales.Remove(sale);
-            db.SaveChanges();
-            return RedirectToAction("Index");
+            return this.RedirectToAction("Index", "Sales");
         }
 
         protected override void Dispose(bool disposing)

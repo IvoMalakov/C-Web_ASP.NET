@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -43,20 +44,31 @@
     <Compile Include="BindingModels\AddCarBindingModel.cs" />
     <Compile Include="BindingModels\AddCustomerBindingModel.cs" />
     <Compile Include="BindingModels\AddPartBindingModel.cs" />
+    <Compile Include="BindingModels\AddSaleBindingModel.cs" />
     <Compile Include="BindingModels\DeletePartBindingModel.cs" />
     <Compile Include="BindingModels\EditCustomerBindingModel.cs" />
     <Compile Include="BindingModels\EditPartBindingModel.cs" />
+    <Compile Include="BindingModels\LoginUserBindingModel.cs" />
+    <Compile Include="BindingModels\RegisterUserBindingModel.cs" />
+    <Compile Include="BindingModels\ReviewSaleBindingModel.cs" />
     <Compile Include="EntityModels\Car.cs" />
     <Compile Include="EntityModels\Customer.cs" />
+    <Compile Include="EntityModels\Session.cs" />
+    <Compile Include="EntityModels\ModelValidations\User.cs" />
     <Compile Include="EntityModels\Part.cs" />
+    <Compile Include="EntityModels\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="EntityModels\Sale.cs" />
     <Compile Include="EntityModels\Supplier.cs" />
     <Compile Include="ViewModels\AddPartsSupplierViewModel.cs" />
+    <Compile Include="ViewModels\AddSaleViewModels\AddSaleViewModel.cs" />
+    <Compile Include="ViewModels\AddSaleViewModels\CarSaleViewModel.cs" />
+    <Compile Include="ViewModels\AddSaleViewModels\CustomerSaleViewModel.cs" />
     <Compile Include="ViewModels\DeletePartViewModel.cs" />
     <Compile Include="ViewModels\EditPartViewModel.cs" />
     <Compile Include="ViewModels\PartForACarViewModel.cs" />
     <Compile Include="ViewModels\PartViewModel.cs" />
+    <Compile Include="ViewModels\ReviewSaleViewModel.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

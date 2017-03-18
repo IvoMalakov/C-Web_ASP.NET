@@ -34,3 +34,5 @@ D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essenti
 D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealer.Data\obj\Debug\CarDealer.Data.csprojResolveAssemblyReference.cache
 D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealer.Data\obj\Debug\CarDealer.Data.dll
 D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealer.Data\obj\Debug\CarDealer.Data.pdb
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealer.Data\obj\Debug\CarDealer.Data.Migrations.InitialCreate.resources
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealer.Data\obj\Debug\CarDealer.Data.csproj.GenerateResource.Cache

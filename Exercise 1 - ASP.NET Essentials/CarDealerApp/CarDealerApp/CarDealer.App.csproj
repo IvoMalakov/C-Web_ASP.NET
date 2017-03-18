@@ -137,10 +137,12 @@
     <Compile Include="Controllers\PartsController.cs" />
     <Compile Include="Controllers\SalesController.cs" />
     <Compile Include="Controllers\SuppliersController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\AuthenticationManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -225,7 +227,16 @@
     <Content Include="Views\Parts\Edit.cshtml" />
     <Content Include="Views\Parts\All.cshtml" />
     <Content Include="Views\Parts\Add.cshtml" />
+    <Content Include="Views\Sales\Add.cshtml" />
     <None Include="Views\Sales\Discounted.cshtml" />
+    <Content Include="Views\Users\Delete.cshtml" />
+    <Content Include="Views\Users\Details.cshtml" />
+    <Content Include="Views\Users\Edit.cshtml" />
+    <Content Include="Views\Users\Index.cshtml" />
+    <Content Include="Views\Users\Register.cshtml" />
+    <Content Include="Views\Users\Login.cshtml" />
+    <Content Include="Views\Shared\_Layout_LoggedUser.cshtml" />
+    <Content Include="Views\Sales\Review.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

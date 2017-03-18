@@ -1,0 +1,56 @@
+﻿@using System.Collections.Generic;
+@model CarDealer.Models.ViewModels.AddSaleViewModels.AddSaleViewModel
+
+@{
+    ViewBag.Title = "Add";
+    Layout = "~/Views/Shared/_Layout_LoggedUser.cshtml";
+}
+
+<style>
+    .buttons {
+        margin: auto 10px auto 185px;
+        width: 100px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+</style>
+
+<h1 style="text-transform: uppercase" class="text-capitalize text-center text-primary">Add Sale</h1>
+
+<form method="POST">
+    <div class="form-group">
+        <label for="Customer" class="col-form-label">Customer: </label>
+        <select id="Customer" name="Customer" class="form-control">
+            @{
+                foreach (var customer in Model.Customers)
+                {
+                    <option value="@customer.Id">@customer.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Car" class="col-form-label">Car: </label>
+        <select id="Car" name="Car" class="form-control">
+            @{
+                foreach (var car in Model.Cars)
+                {
+                    <option value="@car.Id">@car.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Discount" class="col-form-label">Discount: </label>
+        <select id="Discount" name="Discount" class="form-control">
+            @{
+                for (int i = 0; i <= 60; i += 5)
+                {
+                    <option value="@i">@i%</option>
+                }
+            }
+        </select>
+    </div>
+    <br/>
+    <input type="submit" value="Submit" class="btn btn-primary buttons" />
+</form>
