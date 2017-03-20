@@ -87,7 +87,10 @@ namespace CarDealerApp.Controllers
 
             if (this.ModelState.IsValid)
             {
-                this.service.AddCarToDb(bindingModel);
+                int userId =
+                    this.db.Sessions.FirstOrDefault(s => s.IsActive && s.SessionId == httpCoockie.Value).UserId;
+
+                this.service.AddCarToDb(bindingModel, userId);
                 return this.RedirectToAction("Index");
             }
 

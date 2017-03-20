@@ -13,8 +13,11 @@ namespace CarDealer.Services
 {
     public class SalesService : Service
     {
+        private LogsService logsService;
+
         public SalesService(CarDealerContext context) : base(context)
         {
+            this.logsService = new LogsService(Data.Data.Context);
         }
 
         public AddSaleViewModel GetAllSalesDetails()
@@ -77,7 +80,7 @@ namespace CarDealer.Services
             return viewModel;
         }
 
-        public void FinalizeSale(ReviewSaleBindingModel bindingModel)
+        public void FinalizeSale(ReviewSaleBindingModel bindingModel, int userId)
         {
             Sale sale = new Sale()
             {
@@ -87,6 +90,7 @@ namespace CarDealer.Services
             };
 
             this.Context.Sales.Add(sale);
+            this.logsService.GenerateLog(Operation.Add, ModifiedTable.Sale, userId);
             this.Context.SaveChanges();
         }
     }

@@ -12,11 +12,13 @@ namespace CarDealer.Services
 {
     public class SuppliersService : Service
     {
+        private LogsService logsService;
         public SuppliersService(CarDealerContext context) : base(context)
         {
+            this.logsService = new LogsService(Data.Data.Context);
         }
 
-        public void AddSupplier(AddSupplierBindingModel bindingModel)
+        public void AddSupplier(AddSupplierBindingModel bindingModel, int userId)
         {
             Supplier supplier = new Supplier()
             {
@@ -25,6 +27,7 @@ namespace CarDealer.Services
             };
 
             this.Context.Suppliers.Add(supplier);
+            this.logsService.GenerateLog(Operation.Add, ModifiedTable.Supplier, userId);
             this.Context.SaveChanges();
         }
 
@@ -42,11 +45,12 @@ namespace CarDealer.Services
             return viewModel;
         }
 
-        public void EditSuppller(EditSupplierBindingModel bindingModel)
+        public void EditSuppller(EditSupplierBindingModel bindingModel, int userId)
         {
             Supplier supplier = this.Context.Suppliers.Find(bindingModel.Id);
             supplier.Name = bindingModel.Name;
             supplier.IsImporter = bindingModel.IsImporter;
+            this.logsService.GenerateLog(Operation.Edit, ModifiedTable.Supplier, userId);
             this.Context.SaveChanges();
         }
 
@@ -63,10 +67,11 @@ namespace CarDealer.Services
             return viewModel;
         }
 
-        public void DeleteSupplier(DeleteSupplierBindingModel bindingModel)
+        public void DeleteSupplier(DeleteSupplierBindingModel bindingModel, int userId)
         {
             Supplier supplier = this.Context.Suppliers.Find(bindingModel.Id);
             this.Context.Suppliers.Remove(supplier);
+            this.logsService.GenerateLog(Operation.Delete, ModifiedTable.Supplier, userId);
             this.Context.SaveChanges();
         }
     }

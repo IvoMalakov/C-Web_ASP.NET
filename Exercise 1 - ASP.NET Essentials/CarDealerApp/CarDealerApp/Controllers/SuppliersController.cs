@@ -79,7 +79,10 @@ namespace CarDealerApp.Controllers
 
             if (ModelState.IsValid)
             {
-                this.service.AddSupplier(bindingModel);
+                int userId =
+                    this.db.Sessions.FirstOrDefault(s => s.IsActive && s.SessionId == httpCoockie.Value).UserId;
+
+                this.service.AddSupplier(bindingModel, userId);
                 return this.RedirectToAction("Index");
             }
 
@@ -114,7 +117,10 @@ namespace CarDealerApp.Controllers
 
             if (ModelState.IsValid)
             {
-                this.service.EditSuppller(bindingModel);
+                int userId =
+                    this.db.Sessions.FirstOrDefault(s => s.IsActive && s.SessionId == httpCoockie.Value).UserId;
+
+                this.service.EditSuppller(bindingModel, userId);
                 return this.RedirectToAction("Index");
             }
 
@@ -149,7 +155,10 @@ namespace CarDealerApp.Controllers
 
             if (this.ModelState.IsValid)
             {
-                this.service.DeleteSupplier(bindingModel);
+                int userId =
+                    this.db.Sessions.FirstOrDefault(s => s.IsActive && s.SessionId == httpCoockie.Value).UserId;
+
+                this.service.DeleteSupplier(bindingModel, userId);
                 return this.RedirectToAction("Index");
             }
 

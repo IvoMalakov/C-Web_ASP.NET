@@ -117,7 +117,10 @@ namespace CarDealerApp.Controllers
 
             if (ModelState.IsValid)
             {
-                this.service.FinalizeSale(bindingModel);
+                int userId =
+                    this.db.Sessions.FirstOrDefault(s => s.IsActive && s.SessionId == httpCoockie.Value).UserId;
+
+                this.service.FinalizeSale(bindingModel, userId);
                 return this.RedirectToAction("Index");
             }
 

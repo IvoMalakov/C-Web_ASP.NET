@@ -1,0 +1,42 @@
+﻿@using CarDealer.Models.ViewModels
+@model IEnumerable<LogViewModel>
+
+@{
+    ViewBag.Title = "Find";
+    Layout = "~/Views/Shared/_Layout_LoggedUser.cshtml";
+}
+
+<style>
+    table, td, tr, th {
+        border: 1px solid black;
+    }
+    h1 {
+        margin-bottom: 20px;
+    }
+</style>
+
+<h1 style="text-transform: uppercase" class="text-capitalize text-center text-primary">Logs for user: <b><i><span class="text-danger">@Model.First().Username</span></i></b></h1>
+
+<table class="table">
+    <tr>
+        <th>@Html.DisplayNameFor(vm => vm.Username)</th>
+        <th>@Html.DisplayNameFor(vm => vm.Operation)</th>
+        <th>Modified Table</th>
+        <th>@Html.DisplayNameFor(vm => vm.Time)</th>
+        <th>Action</th>
+    </tr>
+    @{
+        foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Username</td>
+                <td>@item.Operation</td>
+                <td>@item.ModifiedTable</td>
+                <td>@item.Time</td>
+                <td>@Html.ActionLink("Delete", "Delete", "Logs", new {id = item.Id}, null)</td>
+            </tr>
+        }
+    }
+</table>
+
+<a class="btn btn-info" href="~/Logs/All">Back to all logs</a>

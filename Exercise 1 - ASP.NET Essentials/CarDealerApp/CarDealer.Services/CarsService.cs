@@ -13,11 +13,14 @@ namespace CarDealer.Services
 {
     public class CarsService : Service
     {
+        private LogsService logsService;
+
         public CarsService(CarDealerContext context) : base(context)
         {
+            this.logsService = new LogsService(Data.Data.Context);
         }
 
-        public void AddCarToDb(AddCarBindingModel bindingModel)
+        public void AddCarToDb(AddCarBindingModel bindingModel, int userId)
         {
             if (bindingModel.TravelledDistance >= 0)
             {
@@ -48,6 +51,7 @@ namespace CarDealer.Services
                 }
 
                 this.Context.Cars.Add(car);
+                this.logsService.GenerateLog(Operation.Add, ModifiedTable.Car, userId);
                 this.Context.SaveChanges();
             }
         }
