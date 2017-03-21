@@ -1,0 +1,47 @@
+﻿@model CarDealer.Models.ViewModels.ReviewSaleViewModel
+
+@{
+    ViewBag.Title = "Review";
+    Layout = "~/Views/Shared/_Layout_LoggedUser.cshtml";
+}
+
+<style>
+    .buttons {
+        margin: auto 10px auto 10px;
+        width: 100px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+</style>
+
+<h1 style="text-transform: uppercase" class="text-capitalize text-center text-primary">Review Sale</h1>
+
+<form method="POST">
+    <div class="form-group">
+        <label for="Customer" class="col-form-label">Customer: </label>
+        <input type="number" name="CustomerId" id="CustomerId" value="@Model.CustomerId" hidden="hidden"/>
+        <input type="text" class="form-control" name="CustomerName" id="Customer" value="@Model.CustomerName" readonly="readonly"/>
+    </div>
+    <div class="form-group">
+        <label for="Car" class="col-form-label">Car: </label>
+        <input type="number" name="CarId" id="CarId" value="@Model.CarId" hidden="hidden" />
+        <input type="text" class="form-control" name="CarName" id="Car" value="@Model.CarName" readonly="readonly" />
+    </div>
+    <div class="form-group">
+        <label for="Discount" class="col-form-label">Discount: </label>
+        <input type="hidden" value="@Model.FinalDiscountPercent" name="Discount"/>
+        <input type="text" id="Discount" class="form-control" value="@Model.DiscountPercent" readonly="readonly"/>
+    </div>
+    <div class="form-group">
+        <label for="Price" class="col-form-label">Price: </label>
+        <input type="text" id="Price" class="form-control" value="@($"{Model.Price:0.##}")" readonly="readonly"/>
+    </div>
+    <div class="form-group">
+        <label for="FinalPrice" class="col-form-label">Final Price: </label>
+        <input type="text" id="FinalPrice" class="form-control" value="@($"{Model.FinalPrice:0.##}")" readonly="readonly" />
+    </div>
+    <br/>
+    <a class="btn btn-default buttons" href="~/sales/add">Cancel</a>
+    <input type="submit" value="Finalize" class="btn btn-primary buttons" />
+</form>
+

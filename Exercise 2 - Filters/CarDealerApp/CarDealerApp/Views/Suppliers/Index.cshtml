@@ -1,0 +1,55 @@
+﻿@model IEnumerable<CarDealer.Models.EntityModels.Supplier>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    h1 {
+        text-transform: uppercase;
+    }
+
+    table, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .btn {
+        border-radius: 10px;
+        width: 100px;
+        margin-bottom: 20px;
+        padding: 5px;
+        height: 35px;
+    }
+</style>
+
+<h1 class="text-capitalize text-center text-primary">List of all Suppliers</h1>
+
+<p>
+   <a class="btn btn-primary" href="~/suppliers/add">New Supplier</a>
+</p>
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Importer</th>
+        <th>Number of Parts</th>
+        <th>Actions</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            @{
+                string isImporter = @item.IsImporter ? "Yes" : "No";
+                <td>@isImporter</td>
+            }
+            <td>@item.Parts.Count</td>
+            <td>
+                <a href="~/suppliers/edit/@item.Id">Edit</a>
+                <a href="~/suppliers/delete/@item.Id">Delete</a>
+            </td>
+        </tr>
+    }
+</table>

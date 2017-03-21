@@ -1,0 +1,28 @@
+﻿@model CarDealer.Models.ViewModels.DeleteSupplierViewModel
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout_LoggedUser.cshtml";
+}
+
+<style>
+    .buttons {
+        margin: auto 10px auto 10px;
+        width: 120px;
+        padding: 5px;
+        font-size: 15px;
+    }
+</style>
+
+<h1 style="text-transform: uppercase" class="text-capitalize text-center text-primary">Delete a Supplier</h1>
+
+<form method="POST">
+    <input type="number" name="Id" value="@Model.Id" hidden="hidden" />
+    <div class="form-group">
+        <label for="Name" class="col-form-label">Supplier name: </label>
+        <input type="text" class="form-control" id="Name" name="Name" value="@Model.Name" readonly="readonly" />
+    </div>
+    <br />
+    <a class="btn btn-success buttons" href="~/suppliers/">Cancel</a>
+    <input type="submit" class="btn btn-danger buttons" value="Delete Supplier" />
+</form>

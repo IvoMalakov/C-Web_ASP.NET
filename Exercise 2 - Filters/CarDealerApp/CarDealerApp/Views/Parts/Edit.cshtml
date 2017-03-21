@@ -1,0 +1,30 @@
+﻿@model CarDealer.Models.ViewModels.EditPartViewModel
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .buttons {
+        margin: auto 10px auto 10px;
+        width: 100px;
+        padding: 5px;
+    }
+</style>
+
+<h1 style="text-transform: uppercase" class="text-capitalize text-center text-primary">Edit <span class="text-danger">@Model.Name</span> part</h1>
+
+<form method="POST">
+    <input type="number" value="@Model.Id" name="Id" hidden="hidden" />
+    <div class="form-group">
+        <label for="price" class="col-form-label">Part Price: </label>
+        <input type="number" step="0.1" class="form-control" id="price" name="Price" value="@Model.Price"/>
+    </div>
+    <div class="form-group">
+        <label for="quantity" class="col-form-label">Part Quantity: </label>
+        <input type="number" step="1" class="form-control" id="quantity" name="Quantity" value="@Model.Quantity"/>
+    </div>
+    <br />
+    <input type="submit" value="Edit part" class="btn btn-success buttons" />
+    <a class="btn btn-danger" href="~/Parts/All">Back</a>
+</form>

@@ -1,0 +1,260 @@
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\csc.exe
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\System.Collections.Immutable.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\System.Reflection.Metadata.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\vbc.exe
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\VBCSCompiler.exe
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\VBCSCompiler.exe.config
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\CarDealerApp.dll.config
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\CarDealerApp.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\CarDealerApp.pdb
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\Antlr3.Runtime.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\CarDealer.Data.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\CarDealer.Models.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\EntityFramework.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\EntityFramework.SqlServer.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\Microsoft.Web.Infrastructure.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\Newtonsoft.Json.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\System.Web.Helpers.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\System.Web.Mvc.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\System.Web.Optimization.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\System.Web.Razor.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\System.Web.WebPages.Deployment.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\System.Web.WebPages.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\System.Web.WebPages.Razor.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\WebGrease.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\CarDealer.Data.pdb
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\CarDealer.Models.pdb
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\EntityFramework.xml
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\EntityFramework.SqlServer.xml
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\System.Web.Helpers.xml
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\System.Web.Mvc.xml
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\System.Web.Optimization.xml
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\System.Web.Razor.xml
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\System.Web.WebPages.xml
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\System.Web.WebPages.Deployment.xml
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\System.Web.WebPages.Razor.xml
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\Antlr3.Runtime.pdb
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\Newtonsoft.Json.xml
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\obj\Debug\CarDealer.App.csprojResolveAssemblyReference.cache
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\obj\Debug\CarDealerApp.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\obj\Debug\CarDealerApp.pdb
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\csc.exe.config
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\csc.rsp
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\csi.exe
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\csi.exe.config
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\csi.rsp
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\System.AppContext.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\System.Console.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\System.Diagnostics.Process.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\System.IO.Compression.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\System.IO.FileSystem.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\System.IO.Pipes.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\System.Security.AccessControl.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\System.Security.Claims.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\System.Security.Principal.Windows.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\System.Threading.Thread.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\System.ValueTuple.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\System.Xml.XmlDocument.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\System.Xml.XPath.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\vbc.exe.config
+D:\ASP.NET\lab 1 - Micro Blog Application\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp-Skeleton\CarDealerApp\bin\roslyn\vbc.rsp
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\CarDealerApp.dll.config
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\CarDealerApp.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\CarDealerApp.pdb
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\Antlr3.Runtime.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\CarDealer.Data.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\CarDealer.Models.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\EntityFramework.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\EntityFramework.SqlServer.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\Microsoft.Web.Infrastructure.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\Newtonsoft.Json.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\System.Web.Helpers.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\System.Web.Mvc.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\System.Web.Optimization.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\System.Web.Razor.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\System.Web.WebPages.Deployment.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\System.Web.WebPages.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\System.Web.WebPages.Razor.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\WebGrease.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\CarDealer.Data.pdb
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\CarDealer.Models.pdb
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\Antlr3.Runtime.pdb
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\EntityFramework.xml
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\EntityFramework.SqlServer.xml
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\Newtonsoft.Json.xml
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\System.Web.Helpers.xml
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\System.Web.Mvc.xml
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\System.Web.Optimization.xml
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\System.Web.Razor.xml
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\System.Web.WebPages.xml
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\System.Web.WebPages.Deployment.xml
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\System.Web.WebPages.Razor.xml
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\obj\Debug\CarDealer.App.csprojResolveAssemblyReference.cache
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\obj\Debug\CarDealerApp.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\obj\Debug\CarDealerApp.pdb
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\CarDealer.Services.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\AutoMapper.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\CarDealer.Services.pdb
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\AutoMapper.xml
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\csc.exe
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\csc.exe.config
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\csc.rsp
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\csi.exe
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\csi.exe.config
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\csi.rsp
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\System.AppContext.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\System.Collections.Immutable.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\System.Console.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\System.Diagnostics.Process.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\System.IO.Compression.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\System.IO.FileSystem.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\System.IO.Pipes.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\System.Reflection.Metadata.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\System.Security.AccessControl.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\System.Security.Claims.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\System.Security.Principal.Windows.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\System.Threading.Thread.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\System.ValueTuple.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\System.Xml.XmlDocument.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\System.Xml.XPath.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\vbc.exe
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\vbc.exe.config
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\vbc.rsp
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\VBCSCompiler.exe
+D:\ASP.NET\Upragnenie 1 - ASP.NET Essentials\2. CSharp-Frameworks-ASPNET-Essentials-Exercises\CarDealerApp\CarDealerApp\bin\roslyn\VBCSCompiler.exe.config
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\csc.exe
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\csc.exe.config
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\csc.rsp
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\csi.exe
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\csi.exe.config
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\csi.rsp
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\System.AppContext.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\System.Collections.Immutable.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\System.Console.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\System.Diagnostics.Process.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\System.IO.Compression.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\System.IO.FileSystem.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\System.IO.Pipes.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\System.Reflection.Metadata.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\System.Security.AccessControl.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\System.Security.Claims.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\System.Security.Principal.Windows.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\System.Threading.Thread.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\System.ValueTuple.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\System.Xml.XmlDocument.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\System.Xml.XPath.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\vbc.exe
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\vbc.exe.config
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\vbc.rsp
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\VBCSCompiler.exe
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\roslyn\VBCSCompiler.exe.config
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\CarDealerApp.dll.config
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\CarDealerApp.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\CarDealerApp.pdb
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\Antlr3.Runtime.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\AutoMapper.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\CarDealer.Data.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\CarDealer.Models.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\CarDealer.Services.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\EntityFramework.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\EntityFramework.SqlServer.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\Microsoft.Web.Infrastructure.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\Newtonsoft.Json.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\System.Web.Helpers.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\System.Web.Mvc.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\System.Web.Optimization.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\System.Web.Razor.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\System.Web.WebPages.Deployment.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\System.Web.WebPages.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\System.Web.WebPages.Razor.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\WebGrease.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\CarDealer.Data.pdb
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\CarDealer.Models.pdb
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\CarDealer.Services.pdb
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\Antlr3.Runtime.pdb
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\AutoMapper.xml
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\EntityFramework.xml
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\EntityFramework.SqlServer.xml
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\Newtonsoft.Json.xml
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\System.Web.Helpers.xml
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\System.Web.Mvc.xml
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\System.Web.Optimization.xml
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\System.Web.Razor.xml
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\System.Web.WebPages.xml
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\System.Web.WebPages.Deployment.xml
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\bin\System.Web.WebPages.Razor.xml
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\obj\Debug\CarDealer.App.csprojResolveAssemblyReference.cache
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\obj\Debug\CarDealerApp.dll
+D:\ASP.NET\Upragnenie 2 - Filters\CarDealerApp\CarDealerApp\obj\Debug\CarDealerApp.pdb

@@ -1,0 +1,23 @@
+﻿@model HandleErrorInfo
+
+@{
+    ViewBag.Title = "OutOfRangeError";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    img {
+        margin-left: 540px;
+    }
+</style>
+
+<h1 class="text-danger">Sorry, an error occured.</h1>
+<br/>
+<h2>Range Error: @Model.Exception.Message</h2>
+
+<img src="http://www.clipartkid.com/images/452/clipartbest-com-uyhmfp-clipart.png" alt="Sad face" width="100" />

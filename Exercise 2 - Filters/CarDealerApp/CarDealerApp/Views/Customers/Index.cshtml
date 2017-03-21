@@ -1,0 +1,45 @@
+﻿@model IEnumerable<CarDealer.Models.EntityModels.Customer>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>All Customers</h2>
+
+<p>
+    @Html.ActionLink("Add New Customer", "Add")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BirthDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsYoungDriver)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BirthDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsYoungDriver)
+        </td>
+        <td>
+            <a class="btn btn-success" href="~/Customers/Edit/@item.Id" style="margin-right: 10px; width: 75px">Edit</a>
+            <a class="btn btn-danger" href="~/Customers/Delete/@item.Id" style="width: 75px">Delete</a>
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,25 @@
+﻿@model CarDealer.Models.ViewModels.DeletePartViewModel
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .buttons {
+        margin: auto 10px auto 10px;
+        width: 100px;
+        padding: 5px;
+    }
+</style>
+
+<h1 style="text-transform: uppercase" class="text-capitalize text-center text-primary">Delete Part From Database</h1>
+
+<form method="POST">
+    <h3>Are you sure you want to delete <span class="text-danger">@Model.Name</span> from the Database
+    </h3>
+    <input type="number" name="Id" value="@Model.Id" hidden="hidden"/>
+    <br />
+    <a class="btn btn-success buttons" href="~/Parts/All">CANCEL</a>
+    <input type="submit" value="DELETE" class="btn btn-danger buttons"/>
+</form>

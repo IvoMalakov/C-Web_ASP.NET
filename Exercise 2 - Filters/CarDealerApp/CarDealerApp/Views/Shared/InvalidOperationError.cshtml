@@ -1,0 +1,16 @@
+﻿@model HandleErrorInfo
+
+@{
+    ViewBag.Title = "InvalidOperationError";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<h1 class="text-danger">Sorry, an error occured while proccessing your request.</h1>
+<br />
+<h2>Error: @Model.Exception.Message</h2>

@@ -1,0 +1,61 @@
+﻿@model IEnumerable<CarDealer.Models.ViewModels.PartForACarViewModel>
+
+@{
+    ViewBag.Title = "Add";
+    Layout = "~/Views/Shared/_Layout_LoggedUser.cshtml";
+}
+
+<style>
+    .buttons {
+        margin: auto 10px auto 10px;
+        width: 100px;
+        padding: 5px;
+    }
+</style>
+
+<h1 style="text-transform: uppercase" class="text-capitalize text-center text-primary">Add new Car to Database</h1>
+
+<form method="POST">
+    <div class="form-group">
+        <label for="Make" class="col-form-label">Car make: </label>
+        <input type="text" class="form-control" id="Make" name="Make" placeholder="Enter a car maker" />
+    </div>
+    <div class="form-group">
+        <label for="Model" class="col-form-label">Car model: </label>
+        <input type="text" class="form-control" id="Model" name="Model" placeholder="Enter a car model" />
+    </div>
+    <div class="form-group">
+        <label for="Distance" class="col-form-label">Travelling distance: </label>
+        <input type="number" min="0" step="1000" class="form-control" id="Distance" name="TravelledDistance" placeholder="Enter a car distance"/>
+    </div>
+    <div class="form-group">
+        <label for="Part1">Part 1: </label>
+        <select id="Part1" name="Part1" class="form-control">
+            @foreach (var part in Model)
+            {
+                <option value="@part.Id">@part.Name</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Part2">Part 2: </label>
+        <select id="Part2" name="Part2" class="form-control">
+            @foreach (var part in Model)
+            {
+                <option value="@part.Id">@part.Name</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Part3">Part 3: </label>
+        <select id="Part3" name="Part3" class="form-control">
+            @foreach (var part in Model)
+            {
+                <option value="@part.Id">@part.Name</option>
+            }
+        </select>
+    </div>
+    <br />
+    <input type="submit" value="Add Car" class="btn btn-success buttons" />
+    <input type="reset" value="Clear" class="btn btn-danger buttons" />
+</form>

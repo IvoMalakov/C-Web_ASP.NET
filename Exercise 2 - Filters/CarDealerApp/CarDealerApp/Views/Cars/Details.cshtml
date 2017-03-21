@@ -1,0 +1,15 @@
+﻿@using CarDealer.Models.EntityModels
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout_LoggedUser.cshtml";
+}
+
+<h1 class="text-center text-capitalize text-primary">Car Details</h1>
+
+@{ Car car = (Car)ViewData["car"]; }
+
+<h3><span class="text-primary">Make</span> : @car.Make</h3>
+<h3><span class="text-primary">Model</span> : @car.Model</h3>
+<h3><span class="text-primary">Distance Travelled</span> : @car.TravelledDistance</h3>
+<h3><span class="text-primary">Number of Parts</span> : @car.Parts.Count</h3>
